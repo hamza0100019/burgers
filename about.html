@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<title>Madu Resturant</title>
+</head>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+}  
+#Contact{
+    background: var(--main-color);
+    position: relative;
+    bottom: 0  ;
+}
+
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.footer{
+    padding: 20px 0;
+}
+
+
+.list{
+    width: 25%;
+}
+
+.list h4{
+    font-size: 21px;
+    color: var(--bg-color);
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.list h4:before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 60px;
+    left: 0;
+    bottom: -10px;
+    background: var(--bg-color);
+}
+
+:root{
+    --bg-color:#fff;
+    --text-color:#221314;
+    --second-color:#5a7184;
+    --main-color:#6e54fa;
+    --big-font:6rem;
+    --h2-font:3rem;
+    --p-font:1.1rem;
+}
+
+.list ul li:not(:last-child){
+    margin-bottom: 16px;
+}
+
+.list ul li a{
+
+    font-size: var(--p-font);
+    display: block;
+    transition: .3s;
+}
+
+.list ul li a:hover{
+    transform: translateX(14px);
+}
+
+.list .social a{
+    height: 40px;
+    width: 40px;
+   
+    color: var(--main-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    border-radius: 15px;
+    transition: .3s;
+    margin-right: 10px;
+
+}
+
+.list .social a:hover{
+    transform: scale(1.1);
+}
+
+
+.end-text{
+    text-align: center;
+    padding-top: 90px;
+}
+
+.end-text P {
+    color: var(--bg-color);
+    font-size: 14px;
+    letter-spacing: 2px;
+} 
+#about{
+	padding: 0 0 50px 0;
+
+}
+.about_row,.contact_row,.chef_row,.menu_row{
+	display: flex;
+	align-items: center;
+	padding: 0 100px 0 100px;
+}
+.about_col,.contact_col,.chef_col,.menu_col{
+	margin: 10px;
+}
+.about_col h1,.contact_col h3{
+	font-family: cursive;
+}
+.about_col p{
+	font-weight: bold;
+	color: #292929;
+	text-align: justify;
+}
+.about_col #img{
+	width: 300px;
+	height: 300px;
+	margin: auto;
+	border-radius: 50%;
+}
+.about_col img{
+	border-radius: 50%;
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}
+#chef{
+
+	padding: 25px 0 50px 0;
+}
+.chef_col{
+    background: white;
+}
+.chef_col .img{
+	width: 200px;
+	height: 250px;
+	margin: auto;
+    margin-left: 50px;
+}
+.chef_col img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.navbar{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:black;
+    font-weight: 600;
+    padding: 15px;
+   
+}
+
+
+li a:hover{
+    background: white;
+    transition: 0.6s;
+    border-radius: 35px;
+}
+.navbar a:hover{
+    color: black;
+}
+
+#logo{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+.video-container {
+      width: 100%;
+      max-width:1440px; /* Set a maximum width if needed */
+      margin: 0 auto; /* Center the container */
+    }
+
+    .video-container video {
+      width: 100%;
+      height: auto;
+      display: block; /* Remove any default inline styling */
+    }
+    button{
+    width: 250px;
+    padding: 15px;
+    margin: 20px 5px;
+    text-align: center;
+    border-radius: 25px;
+    color: black;
+    border: 2px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+   bottom: 207px;
+   left: 912px;
+   background-color: rgb(253, 196, 10);
+    
+}
+#section{
+    text-align: center;
+    background-color: #292929;
+    color: white;
+    font-size: 2.5em;
+}
+
+    </style>
+</head>
+<body>
+    <div class="navbar" >  
+        <img src="c:\Users\dell\Downloads\loogo-removebg-preview.png" alt="" id="logo">
+        <ul>
+            <li><a href="myproject1.html">acceil</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="contact.html">contact us</a></li>
+        </ul>
+    </div>
+    <br><br>
+    <div class="video-container">
+        <video muted autoplay>
+          <source src="c:\Users\dell\Downloads\Hot_Pizza.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div> 
+            <a href="link.html"><button type="button">order now </button></a>
+        </div>
+
+     </div>
+
+    <div id="about" style>
+        <h1 id="section">About Us</h1>
+        <div class="about_row">
+            <div class="about_col">
+
+                <p>
+                    Welcome to our fast-food haven, where culinary delight meets swift satisfaction!
+                     At our restaurant, we pride ourselves 
+                    on delivering a mouthwatering experience that caters to your cravings with unparalleled speed
+                    Our vibrant and inviting space welcomes you to indulge in a diverse menu
+                    that spans from classic comfort food to innovative culinary creations.
+                     Immerse yourself in the lively ambiance as the sizzling
+                     sounds of our grills and the tantalizing aroma of freshly prepared ingredients beckon your taste buds.
+                     Whether you're seeking a quick bite on the go or a cozy spot to savor your meal, 
+                     our efficient and friendly staff is dedicated to ensuring
+                      that every visit leaves you not only satiated but also eager for your next fast-food adventure.
+                       Join us and embark on a culinary journey where flavor meets haste, and satisfaction is served in every bite.
+                     
+                </p>
+            </div>
+            <div class="about_col">
+                <div id="img"><img src="c:\Users\dell\Downloads\about.png"></div>
+            </div>
+        </div>
+    </div>
+
+   
+<div id="chef">
+	<h1 id="section">Chef</h1>
+	<div class="chef_row">
+		<div class="chef_col">
+			<div class="img"><img src="c:\Users\dell\Downloads\1.png"></div>
+			<div><h4>Muddsar Qayyum</h4></div>
+		</div>
+		<div class="chef_col">
+			<div class="img"><img src="c:\Users\dell\Downloads\2.png"></div>
+			<div><h4>Muddsar Qayyum</h4></div>
+		</div>
+		<div class="chef_col">
+			<div class="img"><img src="c:\Users\dell\Downloads\3.png"></div>
+			<div><h4>Muddsar Qayyum</h4></div>
+		</div>
+		<div class="chef_col">
+			<div class="img"><img src="c:\Users\dell\Downloads\4.png"></div>
+			<div><h4>Muddsar Qayyum</h4></div>
+		</div>
+	</div>
+</div>
+ 
+<footer> 
+<section id="Contact">
+    <div class="footer">
+        <div class="main">
+            <div class="list">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Tour</a></li>
+                </ul>
+            </div>
+
+            <div class="list">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Tour</a></li>
+                </ul>
+            </div>
+
+            <div class="list">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><a href="#">123 Evergreen Lane</a></li>
+                    <li><a href="#">789 Serenity Street</a></li>
+                    <li><a href="#">+1 (123) 123-4567-8901</a></li>
+                    <li><a href="#">dreamtraveler@gmail.com</a></li>
+                    <li><a href="#">+1(123) 234-5678-6789</a></li>
+                </ul>
+            </div>
+
+            <div class="list">
+                <h4>Connect</h4>
+                <div class="social">
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="end-text">
+        <p>© Burger paradise. All rights reserved. Unauthorized reproduction or distribution is prohibited</p>
+    </div>
+</section>
+</footer>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>mon Document</title> <meta charset="utf-8">
+<style>
+body {
+    font-family: Arial, sans-serif;
+}
+ul {
+    float:left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+li {
+    position: relative;
+    margin: 0 10px;
+}
+li ul {
+    float: right;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    min-width: 100px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    cursor: pointer;
+}
+li:hover ul {
+    max-height: 200px;
+    cursor: pointer;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 0px;
+}
+nav ul li{
+    float: right;
+    width: 100px;
+    text-align: center;
+    position: relative;
+    margin-right: 5px;
+}
+
+.sous{
+    display: none;
+    background-color: white;
+    position: absolute;
+    width: 100px;
+    height: 330px;
+    z-index: 1000;
+    margin-bottom: 5px;
+}
+nav > ul li:hover .sous{
+    display: block;
+    width: fit-content;
+}
+.sous li{
+    float: none;
+    width: 100px;
+    text-align: center;
+    background-color: darkgray ;
+    margin-bottom: 4px;
+}
+.sous a{
+    padding: 10px;
+}
+.sous li:hover{ 
+    background-color: rgba(0, 128, 0, 0.635);
+    color: white;
+}
+.deroulant {
+    color: yellow;
+     background-color: black;
+}
+
+
+
+</style>
+</head>
+<body>
+<nav>
+ <ul>
+    <li><a class="deroulant" href="#">acceille </a> </li>
+   <li ><a class="deroulant" href="#">cours</a> 
+    <ul class="sous">
+        <li><a href="#">html/css</a></li>
+        <li><a href="#">binaire et hexa</a></li>
+   </ul>
+ </li>
+
+    <li ><a class="deroulant" href="#">exposes</a>
+        <ul class="sous">
+            <li><a href="#">mon expo</a></li>
+            <li><a href="#">un autre expo</a></li>
+       </ul>
+    </li>
+    <li ><a class="deroulant" href="#">framework js</a>
+        <ul class="sous">
+            <li><a href="#">kenitic js</a></li>
+            <li><a href="#">phaser</a></li>
+            <li><a href="#">processin js</a></li>
+            <li><a href="#">math jax</a></li>
+
+       </ul>
+    </li>
+    <li ><a class="deroulant" href="#">mon projet</a>
+        <ul class="sous">
+            <li><a href="#">cahier de charge</a></li>
+            <li><a href="#">repartition des taches</a></li>
+            <li><a href="#">presentation</a></li>
+            <li><a href="#">production</a></li>
+
+       </ul>
+    </li>
+
+    <li ><a class="deroulant" href="#">page perso </a> </li>
+ </ul>
+
+</nav>
+</body>
+</html>

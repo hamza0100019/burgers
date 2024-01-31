@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+body{
+background-image: url("c:/Users/dell/Downloads/pizza-food.jpg");
+background-size: cover;
+background-position: center;
+}
+.item{
+background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
+text-align: center;
+border: 1px ;
+width: 300px;
+height: 200px;
+transition-property: all;
+transition-duration: 1.5s;
+border-radius:30px ;
+}
+.item:hover {
+   transform: scale(1.3);
+   background-color: orange;
+} 
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+.Im{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    animation: action 2s  infinite ;
+
+}
+@keyframes action{
+0%{transform: rotate(0);
+
+}
+50%{transform: rotate(360deg);
+
+}
+100%{transform: rotate(360deg);
+
+}
+}
+
+button{
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 45px;
+    transition-property:all ;
+    transition-duration: 1s; 
+    background-color: rgb(255, 225, 58);
+   
+}
+button:hover {
+    background-color: orange; 
+    color: #fff;
+    border-color:darkgray;
+    cursor: pointer;
+}
+.navbar{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    padding: 15px;
+ 
+}
+
+
+li a:hover{
+    background: white;
+    transition: 0.6s;
+    border-radius: 35px;
+}
+.navbar a:hover{
+    color: black;
+}
+
+#logo{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+   </style>
+</head>
+<body>
+  
+    <div class="navbar">
+        <img src="c:\Users\dell\Downloads\loogo-removebg-preview.png" alt="" id="logo">
+        <ul>
+            <li><a href="myproject1.html">acceil</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="contact.html">contact us</a></li>
+        </ul>
+    </div>
+<br><br>
+ <h1 style="color: white;margin-left: 20px;">  Our Menu :   </h1> 
+   <div class="container">
+       <div class="item">
+          <img class="Im" src="c:\Users\dell\Downloads\shutterstock-2105210927.jpg" alt="cheese">
+          <h2>pizza Margarita</h2>
+          <a href="link.html" ><button>order now</button></a>
+       </div>
+
+       <div class="item">
+        <img class="Im" src="c:\Users\dell\Downloads\pizza-with-chopped-meat-extra-cheese.jpg" alt="" > 
+         <h2>Pizza viand-Hachee</h2>
+        <a href="link.html" target="_blank"><button>order now</button></a>
+       </div>
+
+       <div class="item">
+        <img class="Im" src="c:\Users\dell\Downloads\pizza-au-poulet-poivrons-tomate-fromage-planche-bois-ronde.jpg" alt=""> 
+         <h2>pizza poulet</h2>
+        <a href="link.html" target="_blank"><button>order now</button></a>
+       </div> 
+
+       <div class="item">
+           <img class="Im" src="c:\Users\dell\Downloads\FruitsDeMer-copie.jpg" alt="">
+           <h2>Pizza fruit de mer</h2>
+          <a href="link.html" target="_blank"> <button>order now</button></a>
+        </div>
+   </div>
+<br><br><br><br>
+
+     <div class="container">
+
+       <div class="item">
+          <img class="Im" src="c:\Users\dell\Downloads\calzon.jpeg" alt="cheese">
+          <h2>Pizza Calzone</h2>
+          <a href="link.html" ><button>order now</button></a>
+       </div>
+
+       <div class="item">
+        <img class="Im" src="c:\Users\dell\Downloads\pizza-carbonara.jpg" alt="" >  
+        <h2>pizza carbonara</h2>
+        <a href="link.html" target="_blank"><button>order now</button></a>
+       </div>
+
+       <div class="item">
+        <img class="Im" src="c:\Users\dell\Downloads\pizza4saision.png" alt="">  
+        <h2>pizza 4 saaisons</h2>
+        <a href="link.html" target="_blank"><button>order now</button></a>
+       </div> 
+
+       <div class="item">
+           <img class="Im" src="c:\Users\dell\Downloads\pepperoni.jpg" alt="">
+           <h2>pizza pepperonis</h2>
+          <a href="link.html" target="_blank"> <button>order now</button></a>
+        </div>
+   </div>
+</body>
+</html>

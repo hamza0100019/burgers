@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Déroulant Vertical</title>
+  <style>
+ body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+nav {
+      background-color: green;
+      width: 200px;
+    }
+
+nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+nav li {
+      padding: 10px;
+      text-align: center;
+      position: relative;
+      padding: 10px;
+    }
+
+nav li:hover {
+      background-color:green;
+    }
+
+nav ul ul {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 100%;
+    }
+
+nav li:hover > ul {
+    display: block;
+    }
+.sous li{
+    background-color:green;
+}
+nav ul ul li {
+      min-width: 200px;
+      float: none;
+      position: relative;
+    }
+
+nav a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+nav li:hover {
+    background-color: grey;
+      
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Produits</a>
+      <ul class="sous">
+        <li><a href="#">Produit 1</a>
+            <ul class="sous1">
+                <li>description de produit</li>
+                <li>how to set up</li>
+            </ul></li>
+        <li><a href="#">Produit 2</a></li>
+        <li><a href="#">Produit 3</a></li>
+      </ul>
+    </li>
+    <li><a href="#">sample</a>
+      <ul class="sous">
+        <li><a href="#">Service 1</a></li>
+        <li><a href="#">Service 2</a></li>
+        <li><a href="#">Service 3</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Downloads</a></li>
+  </ul>
+</nav>
+
+</body>
+</html>
